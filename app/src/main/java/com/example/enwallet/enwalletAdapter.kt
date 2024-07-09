@@ -1,12 +1,13 @@
+package com.example.enwallet
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.enwallet.R
 
 class enwalletAdapter(var transactionsactivity:List<ExpenditureOverView>): RecyclerView.Adapter<ActivityViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActivityViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.transactions,parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.expenditure_list_item,parent, false)
         return ActivityViewHolder(itemView)
         
     }
